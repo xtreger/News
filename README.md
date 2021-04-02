@@ -6,7 +6,7 @@ of which they wish to see the news for. Users can also see the weather based on 
 
 &nbsp;
 
-###Functionalities
+### Functionalities
 
 ---
 
@@ -21,7 +21,7 @@ of which they wish to see the news for. Users can also see the weather based on 
   
 &nbsp;
 
-###Tools Used
+### Tools Used
 
 ---
 * Weather API
@@ -31,7 +31,7 @@ of which they wish to see the news for. Users can also see the weather based on 
 * Gson 
 * Firebase Firestore 
 
-###Screenshots
+### Screenshots
 
 ---
 
