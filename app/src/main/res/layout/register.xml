@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageBack"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/dark" />
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_register_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/dark" />
+
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/register"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/email"
+        android:textAllCaps="true"
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/textSignIn" />
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/email_gmail_com"
+        android:inputType="textEmailAddress"
+        android:minHeight="35dp"
+        android:textColor="@color/dark"
+        android:textColorHint="@color/darkGray"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        tools:ignore="Autofill" />
+
+    <View
+        android:id="@+id/viewEmailDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail" />
+
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toTopOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toStartOf="@id/viewEmailDivider"
+        app:layout_constraintTop_toTopOf="@id/textEmail"
+        app:tint="@color/dark" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/name2"
+        android:textAllCaps="true"
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/viewEmailDivider" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:minHeight="35dp"
+        android:textColor="@color/dark"
+        android:textColorHint="@color/darkGray"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewEmailDivider"
+        app:layout_constraintStart_toEndOf="@id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        tools:ignore="Autofill" />
+
+
+    <View
+        android:id="@+id/viewNameDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/inputName" />
+
+    <ImageView
+        android:id="@+id/imageName"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_prson"
+        app:layout_constraintBottom_toTopOf="@id/viewNameDivider"
+        app:layout_constraintStart_toStartOf="@id/viewNameDivider"
+        app:layout_constraintTop_toTopOf="@id/textName"
+        app:tint="@color/dark" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/phone_number2"
+        android:textAllCaps="true"
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewNameDivider"
+        app:layout_constraintStart_toEndOf="@id/imageName"
+        app:layout_constraintTop_toBottomOf="@id/viewNameDivider" />
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:minHeight="35dp"
+        android:textColor="@color/dark"
+        android:textColorHint="@color/darkGray"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewNameDivider"
+        app:layout_constraintStart_toEndOf="@id/imageName"
+        app:layout_constraintTop_toBottomOf="@id/textPhone"
+        tools:ignore="Autofill" />
+
+
+    <View
+        android:id="@+id/viewPhoneDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/inputPhone" />
+
+    <ImageView
+        android:id="@+id/imagePhone"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintBottom_toTopOf="@id/viewPhoneDivider"
+        app:layout_constraintStart_toStartOf="@id/viewPhoneDivider"
+        app:layout_constraintTop_toTopOf="@id/textPhone"
+        app:tint="@color/dark" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/password"
+        android:textAllCaps="true"
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPhoneDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePhone"
+        app:layout_constraintTop_toBottomOf="@id/viewPhoneDivider" />
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:minHeight="35dp"
+        android:textColor="@color/dark"
+        android:textColorHint="@color/darkGray"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPhoneDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePhone"
+        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        tools:ignore="Autofill" />
+
+
+    <View
+        android:id="@+id/viewPasswordDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
+
+    <ImageView
+        android:id="@+id/imagePassword"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_password"
+        app:layout_constraintBottom_toTopOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toStartOf="@id/viewPasswordDivider"
+        app:layout_constraintTop_toTopOf="@id/textPassword"
+        app:tint="@color/dark" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <TextView
+        android:id="@+id/textRepeatPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/repeat_password"
+        android:textAllCaps="true"
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/viewPasswordDivider" />
+
+    <EditText
+        android:id="@+id/inputRepeatPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:minHeight="35dp"
+        android:textColor="@color/dark"
+        android:textColorHint="@color/darkGray"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPasswordDivider"
+        app:layout_constraintStart_toEndOf="@id/imagePassword"
+        app:layout_constraintTop_toBottomOf="@id/textRepeatPassword"
+        tools:ignore="Autofill" />
+
+
+    <View
+        android:id="@+id/viewRepeatPasswordDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/inputRepeatPassword" />
+
+    <ImageView
+        android:id="@+id/imageRepeatPassword"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_password"
+        app:layout_constraintBottom_toTopOf="@id/viewRepeatPasswordDivider"
+        app:layout_constraintStart_toStartOf="@id/viewRepeatPasswordDivider"
+        app:layout_constraintTop_toTopOf="@id/textRepeatPassword"
+        app:tint="@color/dark" />
+
+    <!--////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/dark"
+        app:layout_constraintTop_toBottomOf="@id/viewRepeatPasswordDivider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

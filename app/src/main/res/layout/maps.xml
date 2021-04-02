@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/mapTitle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/map"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/getNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:text="@string/get_news"
+            android:textColor="@color/black"
+
+            app:backgroundTint="@color/gray" />
+
+    </GridLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gridLayout"
+        android:layout_marginTop="-10dp"
+        tools:context=".Maps" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:paddingTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/gray"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

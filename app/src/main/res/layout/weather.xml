@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".Weather">
+
+    <TextView
+        android:id="@+id/categoryTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:text="@string/weather2"
+        android:textAlignment="center"
+        android:textColor="@color/dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/dark"
+        android:textSize="28sp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/currentTemperature"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200dp"
+        android:minHeight="100dp"
+        android:src="@drawable/ic_weather2"
+        app:tint="@color/darkGray" />
+
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/dark"
+        android:textSize="72sp" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentTemperature"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/dark" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidity"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/dark" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressure"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/dark" />
+
+    <TextView
+        android:id="@+id/updated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/dark"
+        android:textSize="12sp" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:paddingTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/gray"
+        app:menu="@menu/bottom_menu" />
+
+
+</RelativeLayout>

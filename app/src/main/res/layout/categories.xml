@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".Categories">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/categories2"
+            android:textAlignment="center"
+            android:textColor="@color/dark"
+            android:textSize="20sp" />
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:numColumns="2"
+            app:itemRippleColor="@color/gray" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:paddingTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/gray"
+        app:menu="@menu/bottom_menu" />
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".Search">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomNavigation"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/search2"
+                android:textAlignment="center"
+                android:textColor="@color/dark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/searchMap"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                app:backgroundTint="@color/dark"
+                app:icon="@drawable/ic_globe" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/black_background2"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:background="@drawable/black_background2"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/search"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:backgroundTint="@color/dark"
+                app:icon="@drawable/ic_baseline_search_24" />
+
+        </GridLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:paddingTop="10dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/gray"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

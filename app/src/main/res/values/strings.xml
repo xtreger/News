@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="trending">TRENDING</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="source">Source</string>
+    <string name="title">TITLE</string>
+    <string name="todo">TODO</string>
+    <string name="trending2">Trending</string>
+    <string name="categories">Categories</string>
+    <string name="weather">Weather</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories2">CATEGORIES</string>
+    <string name="search2">SEARCH</string>
+    <string name="article">ARTICLE</string>
+    <string name="category">CATEGORY</string>
+    <string name="weather2">WEATHER</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">MAP</string>
+    <string name="get_news">Get News</string>
+    <string name="country">Country</string>
+    <string name="hello_user">Hello User!</string>
+    <string name="saved_news">Saved News</string>
+    <string name="logout">logout</string>
+    <string name="profile2">PROFILE</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="email_gmail_com">email@gmail.com</string>
+    <string name="password_hint">*******</string>
+    <string name="forgot_password" />
+    <string name="register">Register</string>
+    <string name="name">Your Name</string>
+    <string name="name2">NAME</string>
+    <string name="phone_number">0876543210</string>
+    <string name="phone_number2">PHONE NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="repeat_password">REPEAT PASSWORD</string>
+    <string name="saved">SAVED</string>
+
+</resources>
