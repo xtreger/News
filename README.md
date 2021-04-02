@@ -35,16 +35,16 @@ of which they wish to see the news for. Users can also see the weather based on 
 
 ---
 
-![alt text](https://thumbs2.imagebam.com/3d/f1/ff/d9aa911373861125.jpg "")
+![alt text](https://images2.imagebam.com/e9/01/d5/d9aa911373861125.png "")
 
-![alt text](https://thumbs2.imagebam.com/c1/63/48/18cc8b1373861122.jpg "")
+![alt text](https://images2.imagebam.com/25/fb/82/18cc8b1373861122.png "")
 
-![alt text](https://thumbs2.imagebam.com/5f/09/0a/3412cb1373861119.jpg "")
+![alt text](https://images2.imagebam.com/5e/66/e3/3412cb1373861119.png "")
 
-![alt text](https://thumbs2.imagebam.com/b9/87/c0/9abfeb1373861111.jpg "")
+![alt text](https://images2.imagebam.com/b6/f6/0c/9abfeb1373861111.png "")
 
-![alt text](https://thumbs2.imagebam.com/ff/51/d3/ca59141373861128.jpg "")
+![alt text](https://images2.imagebam.com/34/02/ad/ca59141373861128.png "")
 
-![alt text](https://thumbs2.imagebam.com/0e/01/27/2ef2621373861131.jpg "")
+![alt text](https://images2.imagebam.com/93/2b/36/2ef2621373861131.png "")
 
-![alt text](https://thumbs2.imagebam.com/c4/5c/33/b3987c1373861115.jpg "")
+![alt text](https://images2.imagebam.com/4e/06/6a/b3987c1373861115.png "")
